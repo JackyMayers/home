@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sofia';
+    margin: 0;
+}
+
+.header{
+    padding: 15px;
+    text-align: center;
+    background: rgb(207, 43, 14);
+    color: white;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar a.direita{
+    float:right;
+}
+
+.row{
+    display: -ms-flexbox; /IE/
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.side{
+    -ms-flex: 30%;
+    flex: 30%;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.main{
+    -ms-flex: 70%;
+    flex: 70%;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.imagemFalsa{
+    background-color:  #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(73, 69, 69);
+}
