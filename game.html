@@ -127,12 +127,12 @@
 
         chances = limite[nivel] - partidas;    // Chances que ainda restam para o fim do jogo
 
-        // Calcular n�mero de erros do jogador por partida:
+        
 
 
         // CASO 1: Se n�o errou nenhum bloco em qualquer partida, exceto a primeira:
         if (erro == 0 && partidas != 1) {
-          document.getElementById("status").innerHTML += "<i>ACERTOU em " + partidas + " partidas!</i>";
+          document.getElementById("status").innerHTML += "<i>ACERTOU em " + partidas + " tentativas!</i>";
           HabilitarBotoes(false);
           alert("Parabéns! Tente novamente!")
         }
