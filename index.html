@@ -64,7 +64,68 @@
       }
      </SCRIPT>
           </FONT></P></TD></TR></TABLE>
+          <h3>Gerar Numeros Aleatorios. Ex: 1 a 60</h3>
         </strong>
+
+        </center>
+       <center>
+        <script>
+
+          function gerar_aleat(){
+          
+           
+          
+          
+          
+          val1=eval(document.getElementById("min").value);
+          
+          val2=eval(document.getElementById("max").value);
+          
+          contador=0;
+          
+          while(contador<6){
+          
+          gnr=Math.floor((Math.random() * val2) + val1);
+          
+          destino="txt"+contador;
+          
+          document.getElementById(destino).value=gnr;
+          
+          contador++;
+          
+          }
+          
+          }
+          
+           
+          
+          </script>
+          
+          </head>
+          
+           
+          
+          <body>
+          
+          <input id="min" type="text" />
+          
+          <input id="max" type="text"/>
+          
+          <input type="button" value="gerar" id="gerar" onclick="javascript:gerar_aleat()"/>
+          
+          <p>Numeros</p>
+          
+          <input id="txt0" type="text" />
+          
+          <input id="txt1" type="text"/>
+          
+          <input id="txt2" type="text" />
+          
+          <input id="txt3" type="text"/>
+          
+          <input id="txt4" type="text" />
+          
+          <input id="txt5" type="text"/>
         </center>
     
     <div class="row">
