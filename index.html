@@ -1,190 +1,111 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <link rel="shortcut icon" href="imgs/favicon.ico" />
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GCEMGFE2V3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GCEMGFE2V3');
-</script>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home do meu Site</title>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
-    <link href='pages.css' rel='stylesheet'>
-
+    <title>Jacky Mayers</title>
+    <meta name="lomadee-verification" content="22540080" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #000;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #000;
+            transition: color 0.3s ease;
+        }
+        h1:hover {
+            color: #007bff;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #007bff;
+            transition: transform 0.3s ease;
+        }
+        .social-links a:hover {
+            transform: scale(1.1);
+        }
+        .icon img {
+            width: 70%;
+            height: auto;
+            margin-top: 15%;
+        }
+        .profile-image-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .profile-image {
+            width: 300px;
+            height: auto;
+            border-radius: 50%;
+            animation: pulse 2s infinite alternate;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.05);
+            }
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 14px;
+            text-align: center;
+            color: #444; /* Cor mais escura para os direitos reservados */
+        }
+    </style>
 </head>
 <body>
-    
-    <div class="header">
-        <img src="imgs/logo.jpg" height="50%" width="100%"/>
-    </div>
-    
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="loja.html">Produtos</a>
-        <a href="tags.html">Tags HTML</a>
-	<a href="farmacia/">Farmacia</a>
-	<a href="pontohrd/">Ponto</a>
-        <a href="game.html" class="direita">Jogo</a>
-    </div>
-    <center>
-        <strong>
-    <TR>
-        <TD width="54%" height=1><FONT face=Verdana size=5>
-          <font color="black">
-          <SCRIPT language=JavaScript> 
-    var d = new Date()
-    var h = d.getHours()
-    if (h < 12)
-       document.write(" Bom-dia!  Seja bem-vindo ao meu site! ")
-    else
-      if (h < 18)
-         document.write(" Boa-tarde!  Seja bem-vindo ao meu site! ")
-      else
-         document.write(" Boa-noite!  Seja bem-vindo ao meu site! ")
-    </SCRIPT>
-    
-          </font>
-          </FONT></TD>
-        <TD width="46%" height=1>
-          <P align=center><FONT face=Verdana size=5 color="black">
-          <SCRIPT language=JavaScript>
-    
-    today = new Date()
-    document.write("",today.getHours(),"h",today.getMinutes(),"min")
-    if(today.getYear()<1900){
-      document.write(" - ",today.getDate(),"/",today.getMonth()+1,"/",today.getYear()+1900,"");
-      }else{
-      document.write(" - ",today.getDate(),"/",today.getMonth()+1,"/",today.getYear(),"");
-      }
-     </SCRIPT>
-          </FONT></P></TD></TR></TABLE>
-          <h3>Gerar Numeros Aleatorios. Ex: 1 a 60</h3>
-        </strong>
-
-        </center>
-       <center>
-        <script>
-
-          function gerar_aleat(){
-          
-           
-          
-          
-          
-          val1=eval(document.getElementById("min").value);
-          
-          val2=eval(document.getElementById("max").value);
-          
-          contador=0;
-          
-          while(contador<6){
-          
-          gnr=Math.floor((Math.random() * val2) + val1);
-          
-          destino="txt"+contador;
-          
-          document.getElementById(destino).value=gnr;
-          
-          contador++;
-          
-          }
-          
-          }
-          
-           
-          
-          </script>
-          
-          </head>
-          
-           
-          
-          <body>
-          
-          <input id="min" type="text" />
-          
-          <input id="max" type="text"/>
-          
-          <input type="button" value="gerar" id="gerar" onclick="javascript:gerar_aleat()"/>
-          
-          <p>Numeros</p>
-          
-          <input id="txt0" type="text" />
-          
-          <input id="txt1" type="text"/>
-          
-          <input id="txt2" type="text" />
-          
-          <input id="txt3" type="text"/>
-          
-          <input id="txt4" type="text" />
-          
-          <input id="txt5" type="text"/>
-        </center>
-    
-    <div class="row">
-        <div class="side">
-            <h2>Sobre mim</h2>
-            <h2 Style="Color:rgb(47, 0, 255)">
-                Olá, bem vindo ao meu site, estou querendo entrar na area de programação, iniciei meus estudos usando a linguagem C#.
-                Fiz esse site para aprender HTML e para compartilhar aqui minha experiancia na programação, quem quiser ver minha evolução
-                basta entrar no meu canal do youtube <a href="https://www.youtube.com/tairritadotio" target="_blank">clicando aqui.</a> 
-            
-            </h2 >
-
-            
-        <div class="main">
-            
-
-            <div class="imagemFalsa" style="height: 15px;"></div><br />
-               
-            <ul>
-              <li><h2>1° - Escolha o  que  quer fazer!</h2><strong>O que pretende desenvolver, sites, softwares, apps?</strong></li>
-              <li><h2>2° - Comece com coisas que te ajude no seu dia a dia!</h2><strong>Comecei com um programa  que me ajuda na hora de abrir o que e u preciso, veja esse video:<a href="https://www.youtube.com/watch?v=B-8mdvZ0Kmk" > Clique Aqui</a></strong></li>
-              <li><h2>3° - Pratique!</h2></li><strong> Não copie e cole  os codigos, escreva, pode fazer igual o exemplo, mas sempre escrevendo, depois edite,brinque com o código, eesse site foi feito com o código ensinado pelo <a href="https://www.twitch.tv/search?term=xdidadev" > Diogo</a>, acredito que todos que assitiram a aula terminaram com um  loyaut parecido, ams cada um editou a sua maneira.</strong> 
-              <li><h2>4° - Não é facil.</h2><strong>Você não vai aprender da noite  pro dia e emsmo depois de aprender você ainda não aprendeu"</strong></li>
-              <li><h2>5° - Não sei se estou certo!</h2><strong>Esse é o metodo que estou usando para aprender, não estou preso em uma linguagem, a medida que meu interesse muda a linguagem também muda, mas o que eu aconselho é: <a Style="color: red;">"Aprenda uma linguagem antes de passar para outra."</a></strong> </li>
-            </ul>      
-                
-
-            <div class="imagemFalsa" style="height: 15px;"></div><br />
-                <p>
-              <h1 Style="text-align: center;">Apoio</h1>
-            
-              
-            </p>
-                 <br />
-
-            
+    <div class="container">
+        <h1>Jacky Mayers</h1>
+        <p>"Sou o campeão mundial em ser terrível em todos os jogos que existem. Mas olha pelo lado positivo, pelo menos eu sou consistente na minha inconsistência!" 🎮😄</p>
+        <div class="social-links">
+            <a href="https://www.twitch.tv/jackymayers" target="_blank" class="icon"><img src="https://img.icons8.com/color/48/000000/twitch--v1.png" alt="Twitch"></a>
+            <a href="https://www.youtube.com/@jackymayers" target="_blank" class="icon"><img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="YouTube"></a>
+            <a href="https://www.tiktok.com/@jacky.mayers" target="_blank" class="icon"><img src="https://img.icons8.com/fluent/48/000000/tiktok.png" alt="TikTok"></a>
+            <a href="https://www.instagram.com/jackymayers" target="_blank" class="icon"><img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" alt="Instagram"></a>
+            <a href="https://twitter.com/jackymayers" target="_blank" class="icon"><img src="https://img.icons8.com/color/48/000000/twitter--v1.png" alt="Twitter"></a>
+            <a href="https://discord.gg/QgbbzzNRYv" target="_blank" class="icon"><img src="https://img.icons8.com/color/48/000000/discord-logo--v1.png" alt="Discord"></a>
         </div>
     </div>
-    <center>
-        <h3>
-            <a Style=" padding-left: 9px; padding-right:9px;" href="https://www.twitch.tv/tairritadotio" target="_blank">Twitch</a>
-            <a Style=" padding-left: 9px; padding-right:9px;" href="https://twitter.com/Tairritadotio" target="_blank">Twitter</a>
-            <a Style=" padding-left: 9px; padding-right:9px;" href="https://www.instagram.com/tairritadotio/" target="_blank">Instagram</a>
-            <a Style=" padding-left: 9px; padding-right:9px;" href="https://www.youtube.com/tairritadotio" target="_blank">Youtube</a>
-            <a Style=" padding-left: 9px; padding-right:9px;" href="https://www.facebook.com/gaming/Tairritadotio" target="_blank">Facebook</a>
-            <a Style=" padding-left: 9px; padding-right:9px;" href="https://github.com/tairritadotio" target="_blank">GitHub</a>
-            <a Style=" padding-left: 9px; padding-right:9px;" href="https://www.magazinevoce.com.br/magazineledm/" target="_blank">Magazine  LEDM</a>
-            <br />
-			
-        </h3>
-    </center>
-</p>
-<hr />
-<script data-ad-client="ca-pub-8028090908741389" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <div class="footer">
-        <script type="text/javascript">document.write(new Date().getFullYear());</script>
+    <div class="profile-image-container">
+        <img class="profile-image" src="https://media.discordapp.net/attachments/1191751155013914644/1196987283916718210/emote.png?ex=6615e947&is=66037447&hm=3dc5edaf07a969b46d368971b9e4a31a9a01ff240c5e969a75c859e7288e871d&=&format=webp&quality=lossless" alt="Imagem de Perfil">
     </div>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8028090908741389" crossorigin="anonymous"></script>
+    <div class="footer">
+        <p>Direitos Reservados &copy; 2024 Jacky Mayers</p>
+    </div>
 </body>
 </html>
